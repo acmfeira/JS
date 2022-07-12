@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mu nada</title>
+    <style>
+        body {
+            background:rgb(26, 24, 24);
+            font-size:15pt;
+            font-family:Arial, Helvetica, sans-serif;
+            color:rgb(218, 197, 182)
+        }        
+
+        </style>
+</head>
+<body>
+    <h1>Alexandre Menezes</h1>
+    <p>Resultado do processo!!</p>
+    <p class="myclass">Um teste com class</p>
+    <p >Apresendo a usar o <strong>DOM</strong> em Javascript</p>
+    <p id="myid">Aprendendo usar o ID name</p>
+    <div>Click em Mim</div>
+    <script>
+        var res = document.getElementsByTagName('p')[0]
+        var res1 = document.getElementById('nada')
+        var res2 = document.getElementsByClassName('myclass')[0]
+        
+        var res3 = document.querySelector('p#myid')
+        res3.style.color = 'blue'
+        
+        var res4 = document.querySelector('p.myclass')
+        res4.style.color = 'red'
+        document.writeln(res1.innerText)
+        document.writeln(res2.innerText)
+        document.write(`<br>${res3.innerText}`)
+        document.write(`<br>${res4.innerText}`)
+    </script>
+</body>
+</html>

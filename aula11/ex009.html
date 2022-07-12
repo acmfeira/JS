@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O seu Pais</title>
+    <style>
+        div#result{
+            display: none;
+            font: 16px Arial;
+        }
+        input#text0{
+            width: 140px;
+            color: blue;
+            font: 18px Arial;
+        }
+        .info{
+            color: blueviolet;
+            font: 18px Arial bold;
+        }
+        .mybutton{
+            width: 100px;
+            height: 28px;
+            font-size: 18px;
+            font-family: cursive Bold;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Informe Pais onde se Encontra</h2>
+    <label class="info">Seu Pais:</label>
+    <input type="text" id="text0" onclick="resetAll()">
+    <input class="mybutton" type="button" value="Select" onclick="verifica()">
+
+    <div id="result"></div>
+
+    <script>
+        function verifica(){
+            var res = document.querySelector('input#text0')
+            var msg = document.querySelector('div#result')
+            if(res.value.includes('Brasil')){
+                msg.innerHTML = `<p>Voce é um morador do <font color="gold"><b>${res.value}<b></font></p>`
+                msg.style.color = 'green'
+            } else {
+                msg.innerHTML = `<p>Voce é um estrangeiro da <font color="gold"><b>${res.value}<b><font>!!!</p>`
+                msg.style.color = 'red'
+            }
+            msg.style.display = 'inline'
+            
+        }
+        function resetAll(){
+            document.querySelector('div#result').style.display = 'none'
+            document.querySelector('input#text0').value = null
+        }
+    </script>
+</body>
+</html>

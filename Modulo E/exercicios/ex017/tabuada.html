@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header><h2>Tabuada</h2></header>
+    <section>
+        <p>
+            <label for="nuntxt">Digite um Numero: </label>
+            <input type="number" id = "nuntxt" value="5" onclick="limpa()">
+            <input type="button" class ="botao" value="Gerar Tabuada" onclick="gerarTabuada()">
+        </p>
+        <p>
+            <select id= "tbl" size="10"></select>
+        </p>
+    </section>
+
+    <footer><p>&copy; Curso JavaScript</p></footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+header {
+    font-size: 16pt;
+    text-align: center;
+}
+body {
+    background: rgb(204, 160, 160);
+}
+section {
+    width: 25%;
+    margin: auto;
+    background:  rgb(206, 188, 224);
+    border-radius: 7pt;
+    box-shadow: 4pt 4pt 6pt rgb(115, 104, 126);
+    padding: 7pt;
+}
+select#tbl {
+    
+    width: 100pt;
+    height: 130pt;
+    color: rgb(13, 58, 58);
+    display: block;
+    margin: auto;
+    background: rgb(204, 181, 164);
+}
+input.botao {
+    width: 80pt;
+}
+input#nuntxt {
+    width: 50pt;
+}
+footer {
+    text-align: center;
+    font-size: 14pt;
+    color: rgb(38, 60, 61);
+    font-style: italic;
+}

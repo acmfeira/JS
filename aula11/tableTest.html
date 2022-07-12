@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing table!!!!</title>
+    <style>
+        div#result{ 
+            display:none;
+            font-size: 25px;
+            font-family: serif;
+        }
+        input#nameText{
+            width: 220px;
+            color: blueviolet;
+            font: 19px Arial bold;
+        }
+        .bt{
+            margin-top:15px;
+            width: 100px;
+            font: 18px Arial bold;
+            height: 28px;
+            color: crimson;
+        }
+        td {
+            text-align: center;
+        }
+        table {
+            width: 560px;
+            border-style: double;
+            background: rgb(240, 214, 214);
+            
+        }
+        label.title{
+            font: 28px Arial bold;
+            color: rgb(34, 34, 128);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><label class="title">Add your Name</label></th>
+        </tr>
+        <tr>
+            <th>
+                <input type="text" id="nameText" onclick="clearAll()">
+                <input type="button" value="Confirm" class="bt" onclick="showMessage()">
+            
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <div id = 'result'></div>
+
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function showMessage(){
+            let text0 = document.querySelector('input#nameText')
+            
+            let res = document.querySelector('div#result')
+
+            res.innerHTML = `<p>Your name is: <font color="red"><b>${text0.value}</b></font></p>`
+
+            res.style.display = 'inline'
+        }
+
+        function clearAll(){
+            document.querySelector('div#result').style.display = 'none'
+            document.querySelector('input#nameText').value = null
+        }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interation!!!!!</title>
+    <style>
+        div#myID {
+            font-family: Arial;
+            background-color: rgb(68, 58, 50);
+            font-size: 20px;
+            color: beige;
+            width: 220px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myID" ondblclick="doubleClick()" onmouseenter="mouseEnter()" onmouseout="mouseOut()">
+        Click Me!!!
+    </div>
+    <script>
+        var it = document.getElementById('myID')
+        it.addEventListener('click',clicked)
+        function clicked() {
+            it.style.background = 'red'
+        }
+        function mouseEnter() {
+            it.style.color = 'green'
+        }
+        function mouseOut() {
+            it.style.color = 'beige'
+            it.style.background = 'rgb(68, 58, 50)'
+        }
+        function doubleClick() {
+            it.style.background = 'gold'
+        }
+    </script>
+</body>
+
+</html>

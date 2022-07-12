@@ -1,0 +1,30 @@
+body {
+    background: rgb(210, 210, 243);
+}
+header {
+    color: rgb(68, 58, 42);
+    text-align: center;
+}
+section {
+    display: block;
+    margin: auto;
+    background: rgb(164, 164, 197);
+    width: 30%;
+    border-radius: 5pt;
+    padding: 8pt;
+    box-shadow: 5pt 5pt 7pt rgb(74, 79, 97);
+}
+
+input#inittxt, input#fimtxt, input#pastxt {
+    width: 50pt;
+    background-color: bisque;
+    color: blue;
+    font-weight: bold;
+}
+input#botao {
+    width: 60pt;
+    height: 20pt;
+    border-radius: 4pt;
+    color: rgb(26, 49, 116);
+    font-weight: bold;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        #valor0, #valor1  {
+            font: 20px Arial;
+            color: blue;
+            background: rgb(240, 202, 202);
+            width:80px;
+        }
+        .button {
+            font: 20px Arial;
+            width:90px;
+            height:30px;
+            background: rgb(214, 214, 240);            
+        }
+        #result {
+            font-size: 28px;            
+        }
+        h1 {
+            font:28px;
+            color:rgb(8, 74, 75);
+        }
+
+        div#result {
+            display:none;
+            margin-top:10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" value="valor0" id="valor0" onclick="clicked1()"> +
+    <input type="number" value="valor1" id="valor1">
+    <input type="button" value="Somar" class="button" onclick="clicked()">
+
+    <div id="result">A soma é: </div>
+
+    <script>
+        function clicked(){
+            var text0 = document.querySelector('input#valor0')
+            var text1 = document.querySelector('input#valor1')
+
+            var num0 = Number(text0.value)
+            var num1 = Number(text1.value)
+
+            var soma = num0 + num1;
+
+            var res = document.querySelector('div#result')
+            res.innerHTML = `A soma é: <b><font color="red">${soma}</font></b>`
+            
+            res.style.display = 'inline'
+            
+        }
+        function clicked1(){
+            document.querySelector('input#valor0').value = null;
+            document.querySelector('input#valor1').value = null;
+
+            document.querySelector('div#result').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

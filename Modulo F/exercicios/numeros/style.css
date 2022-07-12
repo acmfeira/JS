@@ -1,0 +1,40 @@
+body {
+    background: rgb(182, 168, 168);
+}
+header {
+    text-align: center;
+    font: arial 16pt;
+    font-style: italic;
+    color:rgb(115, 7, 216)
+}
+section {
+    background:rgb(221, 205, 181);
+    display: block;
+    margin: auto;
+    width: 25%;
+    box-shadow: 3pt 3pt 5pt rgb(121, 111, 97) ;
+    padding: 7pt;
+    border-radius: 4pt;
+    
+}
+div.entrada {
+    text-align: center;
+}
+input#valortxt {
+    width: 70pt;
+}
+input#btadd {
+    size: 12pt;
+    font-style: bold;
+}
+select#lista {
+    display:block;
+    margin: auto;
+    width: 112pt;
+    margin-top: 3pt;
+
+}
+footer {
+    color: rgb(84, 97, 97);
+    text-align: center;
+}

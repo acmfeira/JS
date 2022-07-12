@@ -1,0 +1,36 @@
+body {
+    background: rgb(30, 33, 34);
+}
+header{
+    font-size: 14pt;
+    color: bisque;
+    text-align: center;
+}
+section {
+    width: 210pt;
+    display: block;
+    margin: auto;
+    background: rgb(186, 174, 197);
+    border-radius: 5pt;
+    padding: 7pt;
+    box-shadow: 4pt 4pt 8pt rgb(0, 0, 0);
+}
+label {
+    color:rgb(14, 19, 19);
+}
+input#txtvl {
+    width: 50pt;
+    background: rgb(153, 190, 190);
+}
+select#tabuada {
+    display: block;
+    margin: auto;
+    width: 120pt;
+    height: 142pt;
+}
+footer {
+    color:rgb(150, 150, 117);
+    font-size: 11pt;
+    text-align: center;
+    
+}

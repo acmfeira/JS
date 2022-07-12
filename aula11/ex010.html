@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        h2 {
+            color:blue
+        }
+        label {
+            font:18px Arial;
+            color:rgb(48, 82, 83);
+        }
+        input {
+            width:80px;
+            color:darkblue;
+            font: 18px arial bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Verificando Velocidade</h2>
+    <label>A velocidade é: </label> <input type="number" name="txtvel0" id="txtvel0" onmouseenter="resetMe()">
+    <label>Km/h </label>
+    <input type="button" value="Verificar" onclick="verifica()">
+
+    <div id="message"></div>
+
+    <script>
+        function verifica(){
+            var vl = Number(document.querySelector('input#txtvel0').value)
+            if(vl < 80){
+                var msg = `<p><font color="green">Velocidade de <font color='blue'>${vl}</font> permitida!!!</font></p>`
+                document.querySelector('div#message').innerHTML = msg
+            } else {
+                var msg = `<p>Velocidade de <b>${vl}<b> <b><font color="red">Não é Permitido!!!</font></b></p>`
+                document.querySelector('div#message').innerHTML = msg
+            }
+
+            document.querySelector('div#message').style.display = 'inline'
+        }
+        function resetMe(){
+            document.querySelector('input#txtvel0').value = null
+            document.querySelector('div#message').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

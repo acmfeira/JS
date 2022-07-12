@@ -1,0 +1,32 @@
+header{
+    text-align:center;
+    font: normal Arial 15pt ;
+    color: rgb(224, 242, 243);
+}
+body {
+    background: rgb(19, 17, 14);
+}
+section {
+    background: rgb(226, 224, 218);
+    width: 28%;
+    border-radius: 5pt;
+    padding: 10pt;
+    margin: auto;
+    box-shadow: 4pt 4pt 8pt rgb(139, 130, 130);
+    color: rgb(48, 54, 54);
+}
+footer {
+    font: 14pt Arial;
+    color: rgb(107, 73, 73);
+    text-align: center;
+}
+div#msg {
+    color: rgb(52, 6, 95);
+    font: 16pt Arial bold;
+    font-style: italic;
+    text-align:center;
+    padding:8pt;
+}
+div#image {
+
+}
